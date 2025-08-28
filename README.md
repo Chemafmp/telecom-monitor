@@ -11,7 +11,7 @@ Fase 1: ingesta con Python y SQLite. Fase 2: API con Java.
 ```bash
 cd ingest-python
 python3 -m venv .venv
-source .venv/bin/activate  # en Windows: .venv\Scripts\activate
+source .venv/bin/activate
 pip install -U pip
 pip install pytest ruff black anyio httpx selectolax
 pytest -q

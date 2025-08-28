@@ -1,0 +1,10 @@
+Metadata-Version: 2.4
+Name: telemon
+Version: 0.1.0
+Summary: Telecom monitoring – learning project
+Author: Chema
+Requires-Python: >=3.11
+Description-Content-Type: text/markdown
+Requires-Dist: httpx
+Requires-Dist: anyio
+Requires-Dist: selectolax
