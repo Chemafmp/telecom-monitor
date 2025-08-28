@@ -1,10 +1,24 @@
-import logging
-from typing import Optional
+[project]
+name = "telemon"
+version = "0.1.0"
+description = "Telecom monitoring – learning project"
+requires-python = ">=3.11"
+authors = [{ name = "Chema" }]
+dependencies = [
+  "httpx",
+  "anyio",
+  "selectolax",
+]
 
-def run(url: Optional[str] = None, fetcher: Optional[callable] = None):
-            if url is None and fetcher is None:
-                raise SystemExit(
-                    "Error: usa --url o --from-file "
-                    "(o inyecta fetcher en tests)."
-                )
-            # rest of the function...
+[tool.black]
+line-length = 100
+
+[tool.ruff]
+line-length = 100
+
+[tool.ruff.lint]
+select = ["E", "F", "I"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]
