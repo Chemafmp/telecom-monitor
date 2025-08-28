@@ -2,9 +2,8 @@
 name = "telemon"
 version = "0.1.0"
 description = "Telecom monitoring – learning project"
-readme = "README.md"
 requires-python = ">=3.11"
-authors = [{name = "Chema"}]
+authors = [{ name = "Chema" }]
 dependencies = [
   "httpx",
   "anyio",
@@ -15,9 +14,7 @@ dependencies = [
 line-length = 100
 
 [tool.ruff]
-line-length = 110
-select = ["E", "F", "I"]
+line-length = 100
 
-[tool.pytest.ini_options]
-testpaths = ["tests"]
-pythonpath = ["src"]
+[tool.ruff.lint]
+select = ["E", "F", "I"]
